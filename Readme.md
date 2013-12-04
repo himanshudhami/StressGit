@@ -16,7 +16,7 @@ Dummy API Bridge Layer
 
 **To switch to other branch:**
 
-	git checkout ñb <branch>
+	git checkout ‚Äìb <branch>
 
 **To check any modifications in local repository:**
 
@@ -30,9 +30,9 @@ Dummy API Bridge Layer
 
 **Commit files without entering commit message will prompt a window for entering commit message. To close the window, follow the below steps:**
 
-	ï	enter your message following the presented guidelines
-	ï	press Esc to make sure you are out of the insert mode
-	ï	then type :wqEnter or ZZ.
+	‚Ä¢	enter your message following the presented guidelines
+	‚Ä¢	press Esc to make sure you are out of the insert mode
+	‚Ä¢	then type :wqEnter or ZZ.
 **If the same file is modified by others and others changes were already pushed in to remote repository:**
  
 	a.	pull latest changes:
@@ -46,8 +46,8 @@ Dummy API Bridge Layer
 
 **If the same file and word is modified by others and others changes were already pushed in to remote repository:**
 
-	a.	Use ìgit mergetoolî command to resolve conflicts. 
-	b.	git commit ñm ìmessageî
+	a.	Use ‚Äúgit mergetool‚Äù command to resolve conflicts. 
+	b.	git commit ‚Äìm ‚Äúmessage‚Äù
 	c.	git push
 
 **To Create Pull Request:**
