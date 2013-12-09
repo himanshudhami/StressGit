@@ -45,3 +45,6 @@
 	after creating pull request, it can be assigned to individuals for review and merge
 	merge branch to other branch can also be done in git hub website
 
+**To reset the working directory to the state of your last commit**
+
+    git reset --hard
