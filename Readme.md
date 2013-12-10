@@ -45,3 +45,14 @@
 	after creating pull request, it can be assigned to individuals for review and merge
 	merge branch to other branch can also be done in git hub website
 
+**To stash changes, run:**
+
+	git stash
+
+**To apply a stash and remove it from the stash list, run:**
+
+	git stash pop stash@{n}
+
+**To apply a stash and keep it in the stash cache, run:**
+
+	git stash apply stash@{n}
