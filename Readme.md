@@ -48,3 +48,14 @@
 **To reset the working directory to the state of your last commit**
 
     git reset --hard
+**To stash changes, run:**
+
+	git stash
+
+**To apply a stash and remove it from the stash list, run:**
+
+	git stash pop stash@{n}
+
+**To apply a stash and keep it in the stash cache, run:**
+
+	git stash apply stash@{n}
