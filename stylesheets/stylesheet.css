@@ -101,6 +101,10 @@ footer p {
   color: #f2f2f2;
 }
 
+footer p2 {
+  color: #0090ff;
+}
+
 a {
   text-decoration: none;
   color: #007edf;
@@ -433,6 +437,17 @@ Small Device Styles
     font-size: 11px;
   }
 .git-trainings{
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+.git-trainings1{
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+
+.git-trainingssdsd{
     min-width: 320px;
     max-width: 480px;
     font-size: 11px;

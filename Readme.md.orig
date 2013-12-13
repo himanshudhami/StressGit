@@ -47,18 +47,18 @@
 
 **To stash changes, run:**
 
+<<<<<<< HEAD
+    git reset --hard
+**To stash changes, run:**
+
+=======
+>>>>>>> bcc1bcc15e851665fa4a1b99c8a2c270470ab230
 	git stash
 
 **To apply a stash and remove it from the stash list, run:**
 
 	git stash pop stash@{n}
-**To apply a stash and remove it from the stash list, run:**
 
-	git stash pop stash@{n}
-
-**To apply a stash and keep it in the stash cache, run:**
-
-	git stash apply stash@{n}
 **To apply a stash and keep it in the stash cache, run:**
 
 	git stash apply stash@{n}
