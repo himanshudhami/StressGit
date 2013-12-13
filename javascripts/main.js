@@ -22,3 +22,5 @@ console.log('This would be the main JS file.');
   text-align: center;
   border: none;
 }*/
+
+console.log('Git Training.');
