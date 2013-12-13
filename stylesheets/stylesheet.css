@@ -452,5 +452,10 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
+.git-sari{
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
 
 }
