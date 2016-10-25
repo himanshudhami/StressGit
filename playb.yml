@@ -4,6 +4,6 @@
     - git: repo=git@github.com:himanshudhami/StressGit.git
        dest=/tmp/dummy/paulfolder
     - copy: src=/tmp/dummy/paulfolder/abc.zip dest=/tmp/dummy
-    - unarchive: src=/tmp/dummy/abc.zip dest=/tmp/dummy/foo
+    - unarchive: src=/tmp/dummy/abc.zip dest=/tmp/dummy/foo remote_src=yes
      
 
