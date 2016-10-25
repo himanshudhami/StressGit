@@ -1,46 +1,9 @@
-This is a new file to test checking new files to git.
 
-This is a new file to test checking new files to git.
-
-This is a new file to test checking new files to git.
-
-
-This is a new file to test checking new files to git.
-
-
-This is a new file to test checking new files to git.
-
-
-
-This is a new file to test checking new files to git.
-
-
-
-This is a new file to test checking new files to git.
-
-
-
-This is a new file to test checking new files to git.
-This is a new file to test checking new files to git.
-
-This is a new file to test checking new files to git.
-
-This is a new file to test checking new files to git.
-
-
-This is a new file to test checking new files to git.
-
-
-This is a new file to test checking new files to git.
-
-
-
-This is a new file to test checking new files to git.
-
-
-
-This is a new file to test checking new files to git.
-
-
-
-This is a new file to test checking new files to git.
+---
+- hosts: test
+remote_user: root
+tasks:
+- name: Copy Required Files Over.
+  copy: src=/ds1/software/flexera/Changepwd.sql dest=/tmp/changepwd.sql owner=root group=root
+- name: Creating the required Oracle user
+  shell: su - oracle -c 'sqlplus / as sysdba @/tmp/Changepwd.sql'

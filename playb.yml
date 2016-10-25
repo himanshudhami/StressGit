@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+    - shell: echo "hello world"
+    - git: repo=git@github.com:himanshudhami/StressGit.git
+       dest=/tmp/dummy/newfolder
+    - copy: src=/tmp/dummy/newfolder/javascripts/main.js dest=/tmp/dummy
+       
+
