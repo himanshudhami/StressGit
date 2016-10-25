@@ -2,7 +2,8 @@
   tasks:
     - shell: echo "hello world"
     - git: repo=git@github.com:himanshudhami/StressGit.git
-       dest=/tmp/dummy/newfolder
-    - copy: src=/tmp/dummy/newfolder/javascripts/main.js dest=/tmp/dummy
-       
+       dest=/tmp/dummy/paulfolder
+    - copy: src=/tmp/dummy/paulfolder/abc.zip dest=/tmp/dummy
+    - unarchive: src=/tmp/dummy/abc.zip dest=/tmp/dummy/foo
+     
 
