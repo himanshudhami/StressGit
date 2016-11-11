@@ -7,3 +7,5 @@ tasks:
   copy: src=/ds1/software/flexera/Changepwd.sql dest=/tmp/changepwd.sql owner=root group=root
 - name: Creating the required Oracle user
   shell: su - oracle -c 'sqlplus / as sysdba @/tmp/Changepwd.sql'
+
+  -- this is being tested
