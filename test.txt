@@ -9,3 +9,13 @@ tasks:
   shell: su - oracle -c 'sqlplus / as sysdba @/tmp/Changepwd.sql'
 
   -- this is being tested
+
+
+
+  git archive --output=file.zip HEAD $(git diff --name-only 730f042e17d7cd35e3ee47c580ee5d48bcd4ff5c b07529ff834833dd0bed6e367d133c674686a0b2)
+
+git archive -o patch.zip  $(git diff --name-only 1774248 730f042e1^)
+
+git archive -o update.zip 1774248 $(git diff --name-only  730f042e1^)
+
+git archive -o master-feature.zip HEAD $(git diff –name-only master feature)
