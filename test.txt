@@ -7,3 +7,6 @@ tasks:
   copy: src=/ds1/software/flexera/Changepwd.sql dest=/tmp/changepwd.sql owner=root group=root
 - name: Creating the required Oracle user
   shell: su - oracle -c 'sqlplus / as sysdba @/tmp/Changepwd.sql'
+
+To manually start the daemon: sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+To manually stop the daemon: sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
