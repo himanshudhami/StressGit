@@ -1,0 +1,15 @@
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      copy: 
+        dest: "{{ item.dest }}"
+        src: "{{ item.src }}"
+      name: "Copy configuration files."
+      with_items: 
+        - 
+          dest: /tmp/a.txt
+          src: /tmp/dummy/a.txt
+
+
