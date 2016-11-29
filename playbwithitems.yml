@@ -17,5 +17,11 @@
     -
       debug: var={{item}}
       with_items: dir_out.stdout_lines
-
+    - 
+      find: paths="/tmp/" recurse=yes patterns="*.txt"
+      register: files_to_copy
+    -
+      debug: var={{item}}
+      with_items: files_to_copy.files
+    
 
