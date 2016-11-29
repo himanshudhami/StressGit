@@ -11,5 +11,11 @@
         - 
           dest: /tmp/a.txt
           src: /tmp/dummy/a.txt
+    - 
+      command: "ls /tmp"
+      register: dir_out
+    -
+      debug: var={{item}}
+      with_items: dir_out.stdout_lines
 
 
