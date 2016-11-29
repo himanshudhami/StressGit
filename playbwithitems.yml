@@ -23,5 +23,12 @@
     -
       debug: var={{item}}
       with_items: files_to_copy.files
+      # first ensure our target directory exists
+    - file: dest=/tmp/dummy state=directory
+
+    # copy each file over that matches the given pattern
+    - copy: src={{ item }} dest=/tmp/dummy/ owner=root mode=600
+      with_fileglob:
+        - /localtemp/files/*
     
 
