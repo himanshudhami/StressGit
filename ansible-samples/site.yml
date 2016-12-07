@@ -1,0 +1,6 @@
+---
+- hosts: all
+  gather_facts: yes
+  roles:
+    - role: best/best_compile
+    - role: best/best_copy

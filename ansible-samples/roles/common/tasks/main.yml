@@ -1,0 +1,5 @@
+---
+
+  - name: Something new
+    command: "find /tmp/ -name '*.wbt'"
+    register: files_to_copy
